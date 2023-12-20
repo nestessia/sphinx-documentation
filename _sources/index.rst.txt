@@ -1,0 +1,53 @@
+Get Weather API Flask App
+====================================
+
+This is the documentation for the Get Weather API Flask App.
+
+.. automodule:: your_module
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Overview
+--------
+
+Get Weather API Flask App is a Flask-based web application that returns current weather by place on endpoint 'get_weather?place=<placename>'.
+
+Flask App Initialization
+------------------------
+
+The Flask app is initialized with the following code:
+
+.. code-block:: python
+
+  from flask import Flask, request
+  import os
+  import requests
+
+    app = Flask(__name__)
+
+
+Routing Functions
+------------------
+
+### Get Weather
+
+The weather generation route function handles user input and returns weather:
+
+.. code-block:: python
+
+    @app.route('/get_weather/')
+    def get_weather():
+        # ... (omitted for brevity)
+
+        return response_json
+
+Main Function
+-------------
+
+The main function that runs the Get Weather API Flask App Flask App:
+
+.. code-block:: python
+
+    if __name__ == '__main__':
+        app.run(debug=True)
